@@ -1,0 +1,98 @@
+
+header{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    background-attachment: fixed;
+    
+}
+
+.workh{
+    margin: 0px;
+    padding: 0px;
+    font-size: 180px;
+    color: #DFE0E9;
+}
+
+.prsec{
+    
+    display: flex;
+    justify-content: center;
+}
+
+.parallax{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.half{
+    /* height: 300vh; */
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    background-color: #3A00B8;
+}
+.title{
+    
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    position: relative;
+}
+
+#img1{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    
+}
+
+#img2{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* z-index: 0; */
+}
+
+.about-pages{
+    width: 50%;
+
+}
+.about-pages div{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.about-pages div p{
+    width: 80%;
+}
+
+
+/* .about-pages div:nth-child(1){
+    background-color: brown;
+}
+.about-pages div:nth-child(2){
+    background-color: rgb(7, 99, 27);
+}
+.about-pages div:nth-child(3){
+    background-color: rgb(62, 17, 112);
+}
+.about-pages div:nth-child(4){
+    background-color: rgb(139, 32, 107);
+} */
+
+.fuck{
+    position: relative;
+    height: 100vh;
+}
