@@ -17,7 +17,9 @@ const width = document.querySelector("#width span");
            
         
         // window.onresize = function() {
-          
+          $(window).on("load",function(){
+            $(".loader-wrapper").fadeOut("slow");
+          });
             
         // };
 
