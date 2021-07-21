@@ -17,7 +17,7 @@ const width = document.querySelector("#width span");
            
         
         // window.onresize = function() {
-            
+          
             
         // };
 

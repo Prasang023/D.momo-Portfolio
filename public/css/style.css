@@ -148,6 +148,9 @@ header{
 
 body{
     transition: all 0.8s ease;
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
 }
 
 .bg-color{
@@ -174,10 +177,13 @@ body{
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
+    width: 100%;
 }
 
 .logonav{
-
+display: flex;
+justify-content: center;
+align-items: center;
 font-size: 23px;
 
 padding: 0 53px;
@@ -230,6 +236,17 @@ nav ul li a:hover {
 
 @media (max-width: 768px)
 {
+    .logonav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+
+        padding: 0 33px;
+        color: #fff;
+        box-sizing: border-box;
+        float: left;
+    }
     .menu-toggle{
         display: block;
         width: 40px;
@@ -282,9 +299,7 @@ nav ul li a:hover {
 header{
     display: flex;
     flex-direction: row;
-    width: 100vw;
-    height: 80vh;
-    padding: 20px;
+    padding: 10px;
     
 }
 
@@ -294,21 +309,32 @@ header{
     justify-content: center;
     align-items: center;
     text-align: left;
-    width: 50vw;
-    height: 80vh;
+    width: 50%;
+   
     padding-left: 20px;
 }
 
 .right{
    padding-left: 25px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 50%;
+   
 }
-
+.logoright{
+    max-width: 100%;
+    width: auto;
+    max-height: 100%;
+    height: auto;
+}
 
 
 .text{
     margin: 20px 0;
     font-size: 33px;
-    line-height: 90px;
+    font-size: 2.6vw;
+    
 }
 
 .bottomtext{
@@ -360,15 +386,74 @@ header{
         background: #333;
     }
 
-    @media(max-width:720px){
+    @media(max-width:800px){
         .text{
             margin: 20px 0;
-            font-size: 21px;
-            line-height: 70px;
+            font-size: 23px;
+            font-size: 1.7;
+            
         }
         
     }
 
+    @media(max-width:600px){
+        .text{
+            
+            font-size: 30px;
+            font-size: 5vw;
+            
+        }
+        .right{
+            display: none;
+        }
+        .left{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: left;
+            width: 100%;
+        }
+        
+    }
+
+    @media(max-width:380px){
+        .text{
+            
+            font-size: 30px;
+            font-size: 6vw;
+            
+        }
+        .right{
+            display: none;
+        }
+        .left{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: left;
+            width: 100%;
+        }
+        
+        .frontbtn{
+            width: 150px;
+            height: 45px;
+            background: crimson;
+            color: #fff;
+            font-size: 17px;
+            font-weight: 600;
+            text-transform: uppercase;
+            border: 0;
+            position: relative;
+            left: calc(50% -100px);
+            cursor: pointer;
+        }
+        
+      .frontbtn:hover{
+            background: #333;
+        }
+    }
 
 
 
@@ -483,7 +568,7 @@ header{
 
 
     .bgimg1{
-        width: 100vw;
+        width: 100%;
         ;
         position: relative;
         background-image: url('img/Frame40.png');
@@ -492,7 +577,7 @@ header{
     }
 
     .bgimg2{
-        width: 100vw;
+        width: 100%;
         
         position: relative;
         background-image: url('img/Frame44.png');
@@ -501,7 +586,7 @@ header{
     }
 
     .bgimg3{
-        width: 100vw;
+        width: 100%;
         
         position: relative;
         background-image: url('img/CHIRP.png');
@@ -530,15 +615,49 @@ header{
     display: none;
 }
 
+.mobilework{
+    display: none;
+}
 
-@media(max-width:900px){
+@media(max-width:650px){
     
+    .mobilework{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     .mobile{
-        display:flex;
+        display:none;
         flex-direction: column;
     }
     .half{
         display: none;
+    }
+    .mobcard{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #333;
+        border-radius: 30px;
+        margin: 10px;
+        padding-bottom: 20px;
+        width: 350px;
+        box-shadow: #000;
+    }
+    #mobimg{
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        margin-bottom: 10px;
+    }
+    .mobtext{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #e6e6e6;
+    }
+    .mobtext h3{
+        margin-bottom: 10px;
     }
 }
 
@@ -617,14 +736,46 @@ a{
 
 } 
 
+.cs-hidden{
+    display: flex;
+    overflow-x: auto;
+}
+
+.cs-hidden::-webkit-scrollbar{
+    width: 10px;
+
+}
+
+.cs-hidden::-webkit-scrollbar-track{
+    background-color: rgb(190, 19, 53);
+    border-radius: 5px;
+}
+
+.cs-hidden::-webkit-scrollbar-thumb{
+    background-color: rgb(233, 54, 90);
+    border-radius: 5px;
+}
+
 /*--responsive for mobile phone--*/
-/* @media(max-width:720px){
+@media(max-width:720px){
 	.box{
-		width: 94%;
-		height: 410px;
+	width:270px;
+	height:390px;
+	background-color:#1e1e26;
+	border-radius: 10px;
+	box-shadow: 2px 10px 12px rgba(0,0,0,0.5);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content:center;
+	box-sizing: border-box;
+	margin: 10px 10px;
 	}
 	
-} */
+    .cs-hidden::-webkit-scrollbar{
+        display: none;
+    }
+}
 
 /* our services ends */
 
@@ -905,6 +1056,7 @@ margin: 24px 0;
 @media screen and (max-width:700px) {
     .contact-form{
         flex-direction: column-reverse;
+        margin: 24px 0px;
     }
     .contact-form > *{
         width: 100%;
@@ -916,21 +1068,6 @@ margin: 24px 0;
 }
 
 
-.end{
-    margin-top: 40px;
-    width: 100vw;
-    height: 40px;
-    background-color: #000;
-}
-
-.end p{
-    display: flex;
-    float: left;
-    font-size: 12px;
-    color: #fff;
-    margin-top: 10px;
-    margin-left: 15px;
-}
 
 
 /* ----------------------------------------------------------------lighter css file-------------------------------------------------------- */\
