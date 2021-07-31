@@ -4,7 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    font-family: ubuntu;
+    font-family: poppins;
 }
 
 html{
@@ -455,12 +455,35 @@ header{
         height: 100vh;
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
+        padding-top: 70px;
+        padding-left: 30px;
+    }
+
+    .about-pages div h1{
+        display: flex;
+        font-size: 2.5rem;
+        padding-bottom: 30px;
+    }
+
+    .about-pages div h2{
+        display: flex;
+        font-size: x-large;
+        padding-bottom: 30px;
+        margin
+    }
+
+    .about-pages div h3{
+        display: flex;
+        font-size: x-large;
+        padding-bottom: 30px;
+        margin
     }
     
     .about-pages div p{
         width: 80%;
+        font-size: 1.3rem;
+        margin-top: 10px;
+        margin-bottom: 15px;
     }
     
     .project2{
